@@ -70,6 +70,7 @@ public class ProductControllerTest {
         Mockito.verify(productService).addProduct(Mockito.any(), Mockito.any());
     }
 
+
     @Test
     void addProduct_whenInvalid_shouldReturn404() {
         when(productService.addProduct(Mockito.any(), Mockito.any()))
@@ -254,5 +255,6 @@ public class ProductControllerTest {
 
         Mockito.verify(productService).getAllProducts(Mockito.anyString());
     }
+
 
 }
